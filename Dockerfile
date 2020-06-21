@@ -18,9 +18,9 @@ RUN apk update \
 	&& apk --no-cache add glibc-bin-${GLIBC_VERSION}.apk \
 	&& mkdir -p /rrshare \
 	&& mkdir -p /opt/work/store \    
-	&& wget -q https://appdown.rrysapp.com/rrshareweb_centos7.tar.gz -O /rrshare/rrshareweb_centos7.tar.gz \
-	&& tar zxvf /rrshare/rrshareweb_centos7.tar.gz -C /rrshare/ \     
-	&& rm -rf /rrshare/rrshareweb_centos7.tar.gz \   
+	&& wget -q http://appdown.rrys.tv/rrshareweb_linux.tar.gz -O /rrshare/rrshareweb_linux.tar.gz \
+	&& tar zxvf /rrshare/rrshareweb_linux.tar.gz -C /rrshare/ \     
+	&& rm -rf /rrshare/rrshareweb_linux.tar.gz \   
 	&& apk del wget tzdata \
 	&& rm -rf /glibc-${GLIBC_VERSION}.apk \
 	&& rm -rf /glibc-bin-${GLIBC_VERSION}.apk
