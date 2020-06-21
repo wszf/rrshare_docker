@@ -1,5 +1,5 @@
 #本镜像基于最新版alpine+glibc+rrshareweb
-FROM alpine:20200621
+FROM alpine:20190228
 
 LABEL MAINTAINER="azure <https://baiyue.one>"
 
